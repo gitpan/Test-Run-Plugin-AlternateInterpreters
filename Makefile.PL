@@ -11,7 +11,7 @@ WriteMakefile
                            'Test::More' => 0,
                            'YAML' => 0,
                            'Test::Run::CmdLine' => 0,
-                           'Test::Run::Core' => '0.0105',
+                           'Test::Run::Core' => '0.0108',
                            'NEXT' => 0
                          }
         )
