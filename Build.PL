@@ -9,10 +9,11 @@ my $builder = Module::Build->new(
     dist_version_from   => 'lib/Test/Run/Plugin/AlternateInterpreters.pm',
     build_requires => {
         'Test::More' => 0,
+        'Test::Trap' => 0,
     },
     requires => {
-        'Test::Run::CmdLine' => 0,
-        'Test::Run::Core' => "0.0108",
+        'Test::Run::CmdLine' => "0.0105",
+        'Test::Run::Core' => "0.0110",
         'YAML' => 0,
         'NEXT' => 0,
     },

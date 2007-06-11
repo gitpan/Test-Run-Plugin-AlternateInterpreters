@@ -10,8 +10,9 @@ WriteMakefile
           'PREREQ_PM' => {
                            'Test::More' => 0,
                            'YAML' => 0,
-                           'Test::Run::CmdLine' => 0,
-                           'Test::Run::Core' => '0.0108',
+                           'Test::Run::CmdLine' => '0.0105',
+                           'Test::Trap' => 0,
+                           'Test::Run::Core' => '0.0110',
                            'NEXT' => 0
                          }
         )

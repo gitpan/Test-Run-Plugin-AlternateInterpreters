@@ -40,28 +40,26 @@ sub _initialize
     $self->add_to_backend_plugins("AlternateInterpreters");
 }
 
-=head2 $self->get_backend_env_args()
+=head2 $self->private_non_direct_backend_env_mapping()
 
-Overrides the appropriate method of L<Test::Run::CmdLine> to handle the
-C<'HARNESS_ALT_INTRP_FILE'> environment variable.
+Returns the non-direct Backend Environment Mappings, that will specify
+the YAML information. See L<Test::Run::CmdLine> for more information.
 
 =cut
 
-sub get_backend_env_args
+sub private_non_direct_backend_env_mapping
 {
     my $self = shift;
 
-    my $ret = $self->NEXT::get_backend_env_args();
-
-    if (exists($ENV{'HARNESS_ALT_INTRP_FILE'}))
-    {
-        my $data = YAML::LoadFile($ENV{'HARNESS_ALT_INTRP_FILE'});
-        push @$ret, ("alternate_interpreters" => $data);
-    }
-
-    return $ret;
+    return
+    [
+        {
+            type => "yamldata",
+            env => "HARNESS_ALT_INTRP_FILE",
+            arg => "alternate_interpreters",
+        },
+    ];
 }
-
 
 =head1 AUTHOR
 
