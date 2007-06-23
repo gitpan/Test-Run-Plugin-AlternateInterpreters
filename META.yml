@@ -1,6 +1,6 @@
 ---
 name: Test-Run-Plugin-AlternateInterpreters
-version: 0.0103
+version: 0.0104
 author:
   - 'Shlomi Fish <shlomif@cpan.org>'
 abstract: Define different interpreters for different test scripts with Test::Run.
@@ -14,6 +14,7 @@ requires:
   YAML: 0
 build_requires:
   Test::More: 0
+  Test::Run::CmdLine::Trap::ProveApp: 0
   Test::Trap: 0
 provides:
   Test::Run::CmdLine::Plugin::AlternateInterpreters:
@@ -21,7 +22,7 @@ provides:
     version: 0.0100
   Test::Run::Plugin::AlternateInterpreters:
     file: lib/Test/Run/Plugin/AlternateInterpreters.pm
-    version: 0.0103
+    version: 0.0104
 generated_by: Module::Build version 0.2805
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.2.html

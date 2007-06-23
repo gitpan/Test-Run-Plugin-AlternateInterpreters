@@ -1,8 +1,12 @@
 use strict;
 use warnings;
-use Module::Build;
+use File::Spec;
+use lib File::Spec->catdir(File::Spec->curdir(), "inc");
 
-my $builder = Module::Build->new(
+use Test::Run::Builder;
+
+
+my $builder = Test::Run::Builder->new(
     module_name         => 'Test::Run::Plugin::AlternateInterpreters',
     license             => 'mit',
     dist_author         => 'Shlomi Fish <shlomif@cpan.org>',
@@ -10,6 +14,7 @@ my $builder = Module::Build->new(
     build_requires => {
         'Test::More' => 0,
         'Test::Trap' => 0,
+        'Test::Run::CmdLine::Trap::ProveApp' => 0,
     },
     requires => {
         'Test::Run::CmdLine' => "0.0105",
