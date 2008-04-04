@@ -12,7 +12,7 @@ WriteMakefile
                            'YAML' => 0,
                            'Test::Run::CmdLine' => '0.0105',
                            'Test::Trap' => 0,
-                           'Test::Run::Core' => '0.0110',
+                           'Test::Run::Core' => '0.0115',
                            'Test::Run::CmdLine::Trap::ProveApp' => 0,
                            'NEXT' => 0
                          }
