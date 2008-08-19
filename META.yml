@@ -1,6 +1,6 @@
 ---
 name: Test-Run-Plugin-AlternateInterpreters
-version: 0.0106
+version: 0.0107
 author:
   - 'Shlomi Fish <shlomif@cpan.org>'
 abstract: Define different interpreters for different test scripts with Test::Run.
@@ -9,7 +9,7 @@ resources:
   license: http://opensource.org/licenses/mit-license.php
 requires:
   NEXT: 0
-  Test::Run::CmdLine: 0.0108
+  Test::Run::CmdLine: 0.0110
   Test::Run::Core: 0.0117
   YAML: 0
 build_requires:
@@ -19,10 +19,10 @@ build_requires:
 provides:
   Test::Run::CmdLine::Plugin::AlternateInterpreters:
     file: lib/Test/Run/CmdLine/Plugin/AlternateInterpreters.pm
-    version: 0.0100
+    version: 0.0101
   Test::Run::Plugin::AlternateInterpreters:
     file: lib/Test/Run/Plugin/AlternateInterpreters.pm
-    version: 0.0106
+    version: 0.0107
   Test::Run::Plugin::AlternateInterpreters::Straps::AltIntrPlugin:
     file: lib/Test/Run/Plugin/AlternateInterpreters/Straps/AltIntrPlugin.pm
 generated_by: Module::Build version 0.2808
