@@ -1,6 +1,6 @@
 ---
 name: Test-Run-Plugin-AlternateInterpreters
-version: 0.0107
+version: 0.0108
 author:
   - 'Shlomi Fish <shlomif@cpan.org>'
 abstract: Define different interpreters for different test scripts with Test::Run.
@@ -22,7 +22,7 @@ provides:
     version: 0.0101
   Test::Run::Plugin::AlternateInterpreters:
     file: lib/Test/Run/Plugin/AlternateInterpreters.pm
-    version: 0.0107
+    version: 0.0108
   Test::Run::Plugin::AlternateInterpreters::Straps::AltIntrPlugin:
     file: lib/Test/Run/Plugin/AlternateInterpreters/Straps/AltIntrPlugin.pm
 generated_by: Module::Build version 0.2808

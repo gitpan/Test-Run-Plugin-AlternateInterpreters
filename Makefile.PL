@@ -2,19 +2,19 @@
 use ExtUtils::MakeMaker;
 WriteMakefile
 (
-          'PL_FILES' => {},
-          'INSTALLDIRS' => 'site',
           'NAME' => 'Test::Run::Plugin::AlternateInterpreters',
-          'EXE_FILES' => [],
           'VERSION_FROM' => 'lib/Test/Run/Plugin/AlternateInterpreters.pm',
           'PREREQ_PM' => {
+                           'NEXT' => 0,
                            'Test::More' => 0,
-                           'YAML' => 0,
                            'Test::Run::CmdLine' => '0.0110',
-                           'Test::Trap' => 0,
-                           'Test::Run::Core' => '0.0117',
                            'Test::Run::CmdLine::Trap::ProveApp' => 0,
-                           'NEXT' => 0
-                         }
+                           'Test::Run::Core' => '0.0117',
+                           'Test::Trap' => 0,
+                           'YAML' => 0
+                         },
+          'INSTALLDIRS' => 'site',
+          'EXE_FILES' => [],
+          'PL_FILES' => {}
         )
 ;
