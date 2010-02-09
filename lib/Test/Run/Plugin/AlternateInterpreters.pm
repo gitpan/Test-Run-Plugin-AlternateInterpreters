@@ -13,21 +13,16 @@ Test::Run::Plugin::AlternateInterpreters - Define different interpreters for dif
 
 =head1 VERSION
 
-Version 0.0120
+Version 0.0121
 
 =cut
 
-our $VERSION = '0.0120';
+our $VERSION = '0.0121';
 
 has 'alternate_interpreters' => (is => "rw", isa => "ArrayRef");
 
 extends('Test::Run::Base');
 
-sub _get_private_simple_params
-{
-    my $self = shift;
-    return [qw(alternate_interpreters)];
-}
 
 =head1 SYNOPSIS
 
