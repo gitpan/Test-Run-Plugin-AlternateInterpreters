@@ -7,8 +7,9 @@ build_requires:
   Test::Run::CmdLine::Trap::ProveApp: 0
   Test::Trap: 0
 configure_requires:
-  Module::Build: 0.36
-generated_by: 'Module::Build version 0.3603'
+  Module::Build: 0.39
+dynamic_config: 1
+generated_by: 'Module::Build version 0.3901, CPAN::Meta::Converter version 2.120921'
 license: mit
 meta-spec:
   url: http://module-build.sourceforge.net/META-spec-v1.4.html
@@ -17,12 +18,13 @@ name: Test-Run-Plugin-AlternateInterpreters
 provides:
   Test::Run::CmdLine::Plugin::AlternateInterpreters:
     file: lib/Test/Run/CmdLine/Plugin/AlternateInterpreters.pm
-    version: 0.0121
+    version: 0.0122
   Test::Run::Plugin::AlternateInterpreters:
     file: lib/Test/Run/Plugin/AlternateInterpreters.pm
-    version: 0.0121
+    version: 0.0122
   Test::Run::Plugin::AlternateInterpreters::Straps::AltIntrPlugin:
     file: lib/Test/Run/Plugin/AlternateInterpreters/Straps/AltIntrPlugin.pm
+    version: 0
 requires:
   MRO::Compat: 0
   Moose: 0
@@ -30,4 +32,4 @@ requires:
   Test::Run::Core: 0.0120
 resources:
   license: http://www.opensource.org/licenses/mit-license.php
-version: 0.0121
+version: 0.0122
