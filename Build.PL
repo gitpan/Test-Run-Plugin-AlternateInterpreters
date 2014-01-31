@@ -11,6 +11,7 @@ my $builder = Test::Run::Builder->new(
     license             => 'mit',
     dist_author         => 'Shlomi Fish <shlomif@cpan.org>',
     dist_version_from   => 'lib/Test/Run/Plugin/AlternateInterpreters.pm',
+    configure_requires => { 'Module::Build' => '0.36', },
     build_requires => {
         'Test::More' => 0,
         'Test::Trap' => 0,
@@ -21,6 +22,7 @@ my $builder = Test::Run::Builder->new(
         'Test::Run::Core' => "0.0120",
         'MRO::Compat' => 0,
         'Moose' => 0,
+        'perl' => '5.008',
     },
     test_requires => {
         'YAML::XS' => 0,

@@ -3,6 +3,8 @@ package Test::Run::Plugin::AlternateInterpreters;
 use warnings;
 use strict;
 
+use 5.008;
+
 use MRO::Compat;
 
 use Moose;
@@ -13,11 +15,11 @@ Test::Run::Plugin::AlternateInterpreters - Define different interpreters for dif
 
 =head1 VERSION
 
-Version 0.0122
+Version 0.0123
 
 =cut
 
-our $VERSION = '0.0122';
+our $VERSION = '0.0123';
 
 has 'alternate_interpreters' => (is => "rw", isa => "ArrayRef");
 
